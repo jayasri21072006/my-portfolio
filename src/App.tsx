@@ -239,7 +239,12 @@ const Achievements = () => (
       <SectionHeader title="Achievements" sub="Milestones" />
       <div className="grid md:grid-cols-3 gap-6">
         {[
-          { icon: "🛍️", title: "Flipkart Grid 7.0", sub: "Selected for Round 2", detail: "Successfully selected for Round 2 of Flipkart's national engineering challenge, clearing the highly competitive initial rounds." },
+          { 
+            icon: "🛍️", 
+            title: "Flipkart Grid 7.0", 
+            sub: "Selected for Round 2", 
+            detail: "Selected for the second round of Flipkart's national engineering challenge. This achievement marks successful progression through the initial competitive assessment phase." 
+          },
           { icon: "💻", title: "LeetCode 200+", sub: "Java DSA Specialist", detail: "Solved 200+ DSA problems on LeetCode in Java, covering Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more." },
           { icon: "🏆", title: "SIH 2025 Selected", sub: "College Level Round", detail: "Sentiment Analysis project selected at the Internal SIH 2025 college round, competing with teams across departments." }
         ].map((a, idx) => (
