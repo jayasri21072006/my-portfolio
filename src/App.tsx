@@ -47,11 +47,10 @@ const Hero = () => (
     
     <div className="relative z-10 max-w-4xl mx-auto">
       <div className="relative mb-8 inline-block">
-        <div className="w-36 h-36 rounded-[2.5rem] flex items-center justify-center text-white text-5xl font-black shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500"
+        <div className="w-36 h-36 rounded-[2.5rem] flex items-center justify-center text-white text-5xl font-black shadow-[0_0_50px_-12px_rgba(124,58,237,0.5)] rotate-3 hover:rotate-0 transition-all duration-500 cursor-default"
           style={{ background: "linear-gradient(135deg, #7c3aed, #4f46e5)" }}>
           JT
         </div>
-        <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-emerald-500 rounded-2xl border-4 border-slate-950 flex items-center justify-center text-white text-sm shadow-xl animate-bounce">✓</div>
       </div>
 
       <h1 className="text-6xl sm:text-7xl font-black text-white mb-4 tracking-tighter leading-[1.1]">
@@ -61,8 +60,9 @@ const Hero = () => (
         AI &amp; ML Engineer
       </p>
       <p className="max-w-2xl text-slate-400 text-lg leading-relaxed mb-10">
-        Passionate about building intelligent systems, exploring Generative AI, and solving hard problems.
-        Pursuing B.Tech in AI &amp; DS with a CGPA of{" "}
+        Aspiring AI & ML Engineer with a strong foundation in deep learning, natural language processing, and computer vision. 
+        Proven track record of building end-to-end intelligent systems, from real-time monitoring solutions to 
+        predictive analytics platforms. Maintaining academic excellence with a CGPA of{" "}
         <span className="font-extrabold text-violet-400 border-b-2 border-violet-500/30">9.35</span> (up to 5th Semester).
       </p>
 
@@ -78,7 +78,7 @@ const Hero = () => (
           { label: "INTERNSHIPS", value: "4", icon: "🏢" },
           { label: "PROJECTS", value: "3", icon: "🚀" },
         ].map(({ label, value, icon }) => (
-          <div key={label} className="bg-white/5 backdrop-blur-sm rounded-[2rem] p-6 border border-white/5 hover:border-white/10 transition-colors">
+          <div key={label} className="glass-panel rounded-[2rem] p-6 text-center">
             <div className="text-3xl mb-2">{icon}</div>
             <p className="text-3xl font-black text-white tracking-tighter">{value}</p>
             <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-1">{label}</p>
@@ -93,7 +93,7 @@ const Education = () => (
   <section id="education" className="py-32 bg-slate-950 px-4">
     <div className="max-w-4xl mx-auto text-left">
       <SectionHeader title="Education" sub="Academic Timeline" />
-      <div className="bg-white/5 backdrop-blur-md rounded-[2.5rem] p-10 border border-white/5 shadow-2xl relative overflow-hidden group">
+      <div className="glass-panel rounded-[2.5rem] p-10 relative overflow-hidden group">
         <div className="absolute top-0 right-0 w-64 h-64 bg-violet-600/5 rounded-full -mr-32 -mt-32 blur-[80px]" />
         <div className="flex items-start gap-8 flex-wrap md:flex-nowrap">
           <div className="w-20 h-20 rounded-[1.5rem] flex items-center justify-center text-4xl shadow-xl flex-shrink-0 relative z-10"
@@ -168,7 +168,7 @@ const Experience = () => (
         ].map((e, idx) => (
           <div key={idx} className="group relative pl-12 border-l-2 border-white/5">
             <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-violet-600 ring-4 ring-slate-950 group-hover:scale-125 transition-transform" />
-            <div className="bg-white/5 backdrop-blur-sm rounded-[2rem] p-8 border border-white/5 hover:border-violet-500/30 transition-all shadow-xl">
+            <div className="glass-panel rounded-[2rem] p-8">
               <div className="flex items-center gap-5 mb-6">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl bg-slate-900">{e.icon}</div>
                 <div>
@@ -201,30 +201,34 @@ const Projects = () => (
             title: "Proctoring System", 
             sub: "YOLOv8 & MediaPipe", 
             desc: "Real-time exam proctoring system using YOLOv8, MediaPipe and OpenCV. Monitors multiple live camera feeds, detects suspicious behaviours (mobile phone use, copying, head-turning, group discussion), logs incidents automatically.",
-            git: "https://github.com/jayasri21072006/examination-monitoring-system" 
+            git: "https://github.com/jayasri21072006/examination-monitoring-system",
+            demo: "#"
           },
           { 
             emoji: "📈", 
             title: "Crypto Predictor", 
             sub: "Machine Learning", 
             desc: "End-to-end ML project predicting crypto trends using RandomForest. Features automated EDA, feature engineering, and a Streamlit UI for market analytics.",
-            git: "https://github.com/jayasri21072006/crypto-liquidity-predictor" 
+            git: "https://github.com/jayasri21072006/crypto-liquidity-predictor",
+            demo: "#"
           },
           { 
             emoji: "💬", 
             title: "Sentiment Hub", 
             sub: "NLP SIH 2025", 
             desc: "AI-powered web app that analyses large volumes of stakeholder comments. Classifies sentiment, generates summaries, and visualises themes via an interactive word cloud.",
-            git: "https://github.com/jayasri21072006/sentiment_analysis_with_wordcloud" 
+            git: "https://github.com/jayasri21072006/sentiment_analysis_with_wordcloud",
+            demo: "#"
           }
         ].map((p, idx) => (
-          <div key={idx} className="bg-white/5 border border-white/5 rounded-[2.5rem] p-8 hover:bg-white/[0.07] transition-all group flex flex-col h-full">
+          <div key={idx} className="glass-panel rounded-[2.5rem] p-8 flex flex-col h-full">
             <div className="w-14 h-14 rounded-2xl bg-slate-900 flex items-center justify-center text-3xl mb-6 shadow-inner ring-1 ring-white/5 group-hover:ring-violet-500/50 transition-all">{p.emoji}</div>
             <h3 className="text-2xl font-black text-white mb-2">{p.title}</h3>
             <p className="text-[10px] font-black text-violet-500 uppercase tracking-widest mb-4">{p.sub}</p>
             <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">{p.desc}</p>
-            <div className="flex gap-2">
-              <a href={p.git} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 bg-white text-slate-950 text-center rounded-2xl font-black text-xs hover:bg-violet-400 transition-colors">GITHUB</a>
+            <div className="flex gap-4">
+              <a href={p.git} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 bg-white/10 border border-white/5 text-white text-center rounded-2xl font-black text-xs hover:bg-white/20 transition-colors">GITHUB</a>
+              <a href={p.demo} className="flex-1 py-3 bg-white text-slate-950 text-center rounded-2xl font-black text-xs hover:bg-violet-400 transition-colors">LIVE DEMO</a>
             </div>
           </div>
         ))}
@@ -245,10 +249,10 @@ const Achievements = () => (
             sub: "Selected for Round 2", 
             detail: "Selected for the second round of Flipkart's national engineering challenge. This achievement marks successful progression through the initial competitive assessment phase." 
           },
-          { icon: "💻", title: "LeetCode 200+", sub: "Java DSA Specialist", detail: "Solved 200+ DSA problems on LeetCode in Java, covering Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more." },
+          { icon: "💻", title: "LeetCode 200+", sub: "Data Structures & Algos", detail: "Solved 200+ DSA problems covering Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more." },
           { icon: "🏆", title: "SIH 2025 Selected", sub: "College Level Round", detail: "Sentiment Analysis project selected at the Internal SIH 2025 college round, competing with teams across departments." }
         ].map((a, idx) => (
-          <div key={idx} className="bg-white/5 rounded-[2.5rem] p-8 border border-white/5 text-center hover:border-violet-500/30 transition-all group">
+          <div key={idx} className="glass-panel rounded-[2.5rem] p-8 text-center group">
             <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform">{a.icon}</div>
             <h4 className="text-lg font-black text-white mb-2">{a.title}</h4>
             <p className="text-xs font-black text-violet-500 uppercase tracking-widest mb-4">{a.sub}</p>
@@ -269,9 +273,9 @@ const Certifications = () => (
           { title: "MongoDB Developer", org: "MongoDB University", icon: "🍃", url: "https://github.com/jayasri21072006/pro/blob/main/MongoDB.pdf", desc: "Proficiency in MongoDB indexing, aggregation pipelines, and data modeling for scalable applications." },
           { title: "Google Data Analytics", org: "Coursera", icon: "📊", url: "https://github.com/jayasri21072006/pro/blob/main/Google%20Data%20analytics%20professional%20certificate.pdf", desc: "End-to-end data analysis program covering data cleaning, visualization, and reporting." },
           { title: "Machine Learning", org: "AWS", icon: "🧠", url: "https://github.com/jayasri21072006/pro/blob/main/ML%20certification%20-Coursera%2CAWS.pdf", desc: "Core ML concepts and hands-on projects for practical model building." },
-          { title: "Data Science & Gen AI", org: "PW Skills & IBM", icon: "🚀", url: "https://github.com/jayasri21072006/pro/blob/main/pw%20skills%20DS%20with%20GenAI.pdf", desc: "Comprehensive training combined with hands-on generative AI techniques." }
+          { title: "Data Science & Gen AI", org: "PW Skills & IBM", icon: "🚀", url: "https://www.coursera.org/account/accomplishments/verify/T9ZQO0EV81S4", desc: "Comprehensive training combined with hands-on generative AI techniques." }
         ].map((c, idx) => (
-          <div key={idx} className="bg-white/5 p-8 rounded-[2rem] border border-white/5 hover:bg-white/[0.08] transition-colors h-full flex flex-col">
+          <div key={idx} className="glass-panel p-8 rounded-[2rem] h-full flex flex-col">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center text-2xl shadow-inner">{c.icon}</div>
               <div>
@@ -295,11 +299,11 @@ const Skills = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           { label: "AI / ML & GenAI", items: ["Machine Learning","Deep Learning","Generative AI","NLP","Computer Vision","RAG Pipeline"] },
-          { label: "Languages", items: ["Python","Java","JavaScript","TypeScript","C","SQL"] },
+          { label: "Languages", items: ["Python","Java","JavaScript (Intermediate)","HTML & CSS (Intermediate)","C","SQL"] },
           { label: "Frameworks", items: ["TensorFlow","PyTorch","Streamlit","React","FastAPI","YOLOv8"] },
           { label: "Tools", items: ["Git & GitHub","Docker","OpenCV","MediaPipe","MongoDB","Google Colab"] },
         ].map(g => (
-          <div key={g.label} className="bg-white/5 p-8 rounded-[2.5rem] border border-white/5 text-left">
+          <div key={g.label} className="glass-panel p-8 rounded-[2.5rem] text-left">
             <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-6">{g.label}</h4>
             <div className="flex flex-wrap gap-2">
               {g.items.map(i => <span key={i} className="px-3 py-1.5 bg-violet-600/10 border border-violet-500/20 text-violet-400 font-bold text-[10px] rounded-xl">{i}</span>)}
