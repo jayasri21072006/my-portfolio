@@ -464,7 +464,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter basename="/portfolio-showcase">
+      <BrowserRouter basename="/aspiring-ai-engineer-portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
