@@ -69,7 +69,7 @@ const Hero = () => (
     <p className="max-w-lg text-slate-500 text-base leading-relaxed mb-8">
       Passionate about building intelligent systems, exploring Generative AI, and solving hard problems.
       Pursuing B.Tech in AI &amp; DS with a CGPA of{" "}
-      <span className="font-extrabold text-violet-700">9.40</span> (up to 4th Semester).
+      <span className="font-extrabold text-violet-700">9.93</span> (up to 5th Semester).
     </p>
 
     <div className="flex gap-3 flex-wrap justify-center mb-14">
@@ -87,7 +87,7 @@ const Hero = () => (
     {/* Stats */}
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full max-w-xl">
       {[
-        { label: "CGPA", value: "9.40", icon: "🎯" },
+        { label: "CGPA", value: "9.93", icon: "🎯" },
         { label: "DSA Solved", value: "200+", icon: "💻" },
         { label: "Internship", value: "1+", icon: "🏢" },
         { label: "Projects", value: "3", icon: "🚀" },
@@ -125,8 +125,8 @@ const Education = () => (
               </p>
               <div className="flex flex-wrap gap-3">
                 <div className="bg-white rounded-xl px-5 py-3 shadow-sm border border-violet-100 text-center">
-                  <p className="text-2xl font-black text-violet-700">9.40</p>
-                  <p className="text-xs text-slate-500 mt-0.5 font-medium">CGPA · Up to 4th Sem</p>
+                  <p className="text-2xl font-black text-violet-700">9.93</p>
+                  <p className="text-xs text-slate-500 mt-0.5 font-medium">CGPA · Up to 5th Sem</p>
                 </div>
                 <div className="bg-white rounded-xl px-5 py-3 shadow-sm border border-indigo-100 text-center">
                   <p className="text-2xl font-black text-indigo-600">2023–27</p>
@@ -383,7 +383,13 @@ const Certifications = () => (
       <SectionHeader title="Certifications" sub="Verified Achievements" />
       <div className="space-y-6">
         {[
-          { title: "Gen AI Job Simulation", org: "Tata iQ & Forage", cert: CERT_URL, icon: "🤖" },
+          {
+            title: "MongoDB Associate Developer",
+            org: "MongoDB University",
+            cert: "https://github.com/jayasri21072006/pro/blob/main/MongoDB.pdf",
+            icon: "🍃",
+            detail: "Proficiency in MongoDB indexing, aggregation pipelines, and data modeling for scalable applications."
+          },
           { title: "Google Data Analytics", org: "Coursera", cert: "https://github.com/jayasri21072006/pro/blob/main/Google%20Data%20analytics%20professional%20certificate.pdf", icon: "📊" },
           { title: "Machine Learning", org: "Coursera & AWS", cert: "https://github.com/jayasri21072006/pro/blob/main/ML%20certification%20-Coursera%2CAWS.pdf", icon: "🧠" },
           { title: "Data Science & Gen AI", org: "PW Skills & IBM", cert: "https://github.com/jayasri21072006/pro/blob/main/pw%20skills%20DS%20with%20GenAI.pdf", icon: "🚀" }
@@ -399,6 +405,7 @@ const Certifications = () => (
                 <span className="text-xs bg-emerald-100 text-emerald-700 font-bold px-3 py-1 rounded-full">✓ Verified</span>
               </div>
               <p className="text-blue-600 font-bold text-sm mb-3">{c.org}</p>
+              {c.detail && <p className="text-slate-500 text-sm mb-4">{c.detail}</p>}
               <a href={c.cert} target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 text-white text-sm font-bold rounded-full shadow hover:opacity-90 transition-opacity"
                 style={{ background: "linear-gradient(135deg,#2563eb,#0d9488)" }}>
