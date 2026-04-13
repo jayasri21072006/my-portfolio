@@ -5,26 +5,19 @@ const HeroSection = () => {
   return (
     <section id="about" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 text-center pt-20">
       <div className="relative z-10 max-w-4xl mx-auto">
-        <div className="relative mb-8 inline-block animate-slide-up group">
-          <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-[2.5rem] blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-          <img 
-            src="/profile.jpg" 
-            alt="Jayasri T" 
-            className="relative w-36 h-36 rounded-[2.5rem] object-cover shadow-[0_0_50px_-12px_rgba(124,58,237,0.5)] rotate-3 group-hover:rotate-0 transition-transform duration-500 cursor-default border-4 border-white/10 z-10"
-          />
-        </div>
 
-        <h1 className="text-7xl sm:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white via-white/90 to-white/40 mb-4 tracking-tighter leading-[1] animate-slide-up">
+
+        <h1 className="text-7xl sm:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-200 to-white mb-4 tracking-tighter leading-[1] animate-slide-up">
           Jayasri T
         </h1>
-        <p className="text-2xl sm:text-3xl font-black mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-400 animate-slide-up">
+        <p className="text-2xl sm:text-3xl font-black mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-300 animate-slide-up">
           AI & ML Engineer
         </p>
-        <p className="max-w-2xl text-slate-200 text-lg leading-relaxed mb-10 animate-fade-in-delayed mx-auto font-medium">
+        <p className="max-w-2xl text-white/80 text-lg leading-relaxed mb-10 animate-fade-in-delayed mx-auto font-semibold">
           Aspiring AI & ML Engineer with a strong foundation in deep learning, natural language processing, and computer vision. 
           Proven track record of building end-to-end intelligent systems, from real-time monitoring solutions to 
           predictive analytics platforms. Maintaining academic excellence with a CGPA of{" "}
-          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400 border-b-2 border-violet-500/30">9.35</span> (up to 5th Semester).
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-300 border-b-2 border-amber-400/40">9.35</span> (up to 5th Semester).
         </p>
 
         <div className="flex gap-4 flex-wrap justify-center mb-16 animate-fade-in-delayed">

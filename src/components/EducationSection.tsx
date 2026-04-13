@@ -30,13 +30,13 @@ const courses = [
     ]
   },
   {
-    name: "SQL (Basic)",
+    name: "SQL",
     platform: "HackerRank",
     summary: "Validation of basic SQL query design and data manipulation skills.",
     links: [{ label: "View Certificate", url: "https://github.com/jayasri21072006/pro/blob/main/SQL%20certification.pdf" }]
   },
   {
-    name: "Python (Basic)",
+    name: "Python",
     platform: "HackerRank",
     summary: "Demonstrated proficiency in core Python programming concepts and syntax.",
     links: [{ label: "View Certificate", url: "https://github.com/jayasri21072006/pro/blob/main/Python%20Certification.pdf" }]
