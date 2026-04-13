@@ -30,20 +30,6 @@ const AboutSection = () => {
               </p>
             </div>
             
-            <div className="pt-8 flex gap-8 border-t border-white/5">
-              <div>
-                <p className="text-3xl font-black text-white">4+</p>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">Internships</p>
-              </div>
-              <div>
-                <p className="text-3xl font-black text-white">200+</p>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">DSA Problems</p>
-              </div>
-              <div>
-                <p className="text-3xl font-black text-white">9.35</p>
-                <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-1">CGPA</p>
-              </div>
-            </div>
           </div>
 
           <div className="md:w-2/5 w-full">
