@@ -27,15 +27,6 @@ const experiences = [
     tags: ["Python", "ETL", "Automation"],
     cert: "https://github.com/jayasri21072006/pro/blob/main/cognifyz%20python%20Intern.pdf",
     icon: "🐍"
-  },
-  {
-    title: "Tata Virtual Internship",
-    comp: "Tata iQ · Virtual via Forage",
-    time: "Completed",
-    desc: "Completed a virtual internship simulation focused on real-world applications of Generative AI, prompt engineering, and AI-powered workflows.",
-    tags: ["Generative AI", "Prompt Engineering", "AI Workflows"],
-    cert: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_jk9FrdQPddzYXuNSH_1753200293130_completion_certificate.pdf",
-    icon: "🤖"
   }
 ];
 
