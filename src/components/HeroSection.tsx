@@ -5,11 +5,13 @@ const HeroSection = () => {
   return (
     <section id="about" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 text-center pt-20">
       <div className="relative z-10 max-w-4xl mx-auto">
-        <div className="relative mb-8 inline-block animate-slide-up">
-          <div className="w-36 h-36 rounded-[2.5rem] flex items-center justify-center text-white text-5xl font-black shadow-[0_0_50px_-12px_rgba(124,58,237,0.5)] rotate-3 hover:rotate-0 transition-all duration-500 cursor-default"
-            style={{ background: "linear-gradient(135deg, #7c3aed, #4f46e5)" }}>
-            JT
-          </div>
+        <div className="relative mb-8 inline-block animate-slide-up group">
+          <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-[2.5rem] blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+          <img 
+            src="/profile.jpg" 
+            alt="Jayasri T" 
+            className="relative w-36 h-36 rounded-[2.5rem] object-cover shadow-[0_0_50px_-12px_rgba(124,58,237,0.5)] rotate-3 group-hover:rotate-0 transition-transform duration-500 cursor-default border-4 border-white/10 z-10"
+          />
         </div>
 
         <h1 className="text-7xl sm:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white via-white/90 to-white/40 mb-4 tracking-tighter leading-[1] animate-slide-up">
