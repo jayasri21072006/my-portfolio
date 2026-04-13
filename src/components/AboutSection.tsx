@@ -1,3 +1,4 @@
+import SectionHeader from "./SectionHeader";
 import { Brain, Database, Sparkles, BarChart3 } from "lucide-react";
 
 const highlights = [
@@ -25,15 +26,9 @@ const highlights = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-container">
-      <div className="text-center mb-16">
-        <p className="section-label">
-          About Me
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Passionate About <span className="text-gradient">AI Innovation</span>
-        </h2>
-      </div>
+    <section id="about" className="py-32 px-4">
+      <div className="max-w-6xl mx-auto text-left">
+        <SectionHeader title="About Me" sub="Professional Narrative" />
       
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
@@ -98,6 +93,7 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

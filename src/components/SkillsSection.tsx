@@ -1,3 +1,5 @@
+import SectionHeader from "./SectionHeader";
+
 const skills = [
   "Python", "SQL", "Java", "JavaScript", "TypeScript", "C",
   "Machine Learning", "Deep Learning", "Generative AI", "NLP", "Computer Vision",
@@ -9,15 +11,9 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="section-container">
-      <div className="text-center mb-16">
-        <p className="section-label">
-          My Expertise
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Skills & <span className="text-gradient">Technologies</span>
-        </h2>
-      </div>
+    <section id="skills" className="py-32 px-4">
+      <div className="max-w-5xl mx-auto">
+        <SectionHeader title="Skills" sub="Technical Expertise" />
       
       <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
         {skills.map((skill, index) => (
@@ -29,6 +25,7 @@ const SkillsSection = () => {
             {skill}
           </span>
         ))}
+      </div>
       </div>
     </section>
   );

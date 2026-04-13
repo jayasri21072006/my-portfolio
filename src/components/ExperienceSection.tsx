@@ -1,78 +1,68 @@
-import { ExternalLink } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const experiences = [
   {
-    role: "Gen AI-Powered Job Simulation",
-    company: "Tata iQ · Virtual Internship via Forage",
-    period: "Completed",
-    description: "Completed a virtual internship simulation focused on real-world applications of Generative AI, including AI-powered workflows, prompt engineering, and practical deployment.",
-    certificateUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_jk9FrdQPddzYXuNSH_1753200293130_completion_certificate.pdf"
+    title: "Node.js Intern",
+    comp: "Askan Technologies",
+    time: "Dec 2025",
+    desc: "Built RESTful APIs, implemented authentication, integrated third-party services, and improved backend reliability.",
+    tags: ["Node.js", "Express", "API", "Auth"],
+    cert: "https://github.com/jayasri21072006/pro/blob/main/Askan%20Node.js%20intern.pdf",
+    icon: "🚀"
   },
   {
-    role: "Node.js Intern",
-    company: "Askan Technologies",
-    period: "Dec 2025",
-    description: "Built RESTful APIs, implemented authentication, integrated third-party services, and wrote unit tests to improve backend reliability.",
-    certificateUrl: "https://github.com/jayasri21072006/pro/blob/main/Askan%20Node.js%20intern.pdf"
+    title: "ML Intern",
+    comp: "Saiket Systems",
+    time: "Jun 2025 - Jul 2025",
+    desc: "Developed ML pipelines: data cleaning, feature engineering, model training and evaluation; collaborated on monitoring.",
+    tags: ["Machine Learning", "Python", "Pipelines"],
+    cert: "https://github.com/jayasri21072006/pro/blob/main/saiket%20Ml%20intern.pdf",
+    icon: "🧠"
   },
   {
-    role: "ML Intern",
-    company: "Saiket Systems",
-    period: "Jun 2025 - Jul 2025",
-    description: "Developed ML pipelines: data cleaning, feature engineering, model training and evaluation; collaborated on model deployment and monitoring.",
-    certificateUrl: "https://github.com/jayasri21072006/pro/blob/main/saiket%20Ml%20intern.pdf"
+    title: "Python Intern",
+    comp: "Cognifyz Technologies",
+    time: "Feb 2025 - Mar 2025",
+    desc: "Automated ETL workflows, created reusable Python modules, and implemented tests to ensure code quality.",
+    tags: ["Python", "ETL", "Automation"],
+    cert: "https://github.com/jayasri21072006/pro/blob/main/cognifyz%20python%20Intern.pdf",
+    icon: "🐍"
   },
   {
-    role: "Python Intern",
-    company: "Cognifyz Technologies",
-    period: "Feb 2025 - Mar 2025",
-    description: "Automated ETL workflows, created reusable Python modules, and implemented tests and CI steps to ensure code quality.",
-    certificateUrl: "https://github.com/jayasri21072006/pro/blob/main/cognifyz%20python%20Intern.pdf"
+    title: "Tata Virtual Internship",
+    comp: "Tata iQ · Virtual via Forage",
+    time: "Completed",
+    desc: "Completed a virtual internship simulation focused on real-world applications of Generative AI, prompt engineering, and AI-powered workflows.",
+    tags: ["Generative AI", "Prompt Engineering", "AI Workflows"],
+    cert: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_jk9FrdQPddzYXuNSH_1753200293130_completion_certificate.pdf",
+    icon: "🤖"
   }
 ];
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="section-container">
-      <div className="text-center mb-16">
-        <p className="section-label">
-          Career Journey
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Work <span className="text-gradient">Experience</span>
-        </h2>
-      </div>
-      
-      <div className="max-w-3xl mx-auto">
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
-          
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative pl-16 pb-12 last:pb-0">
-              {/* Timeline dot */}
-              <div className="absolute left-4 top-1 timeline-dot" />
-              
-              <a 
-                href={exp.certificateUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="card-glass rounded-xl p-6 hover:border-primary/30 transition-all duration-300 block group cursor-pointer"
-              >
-                <div className="flex items-start justify-between flex-wrap gap-2 mb-3">
+    <section id="experience" className="py-32 px-4">
+      <div className="max-w-4xl mx-auto text-left">
+        <SectionHeader title="Experience" sub="Professional Narrative" />
+        <div className="space-y-12">
+          {experiences.map((e, idx) => (
+            <div key={idx} className="group relative pl-12 border-l-2 border-white/5">
+              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-violet-600 ring-4 ring-slate-950 group-hover:scale-125 transition-transform" />
+              <div className="card-glass rounded-[2rem] p-8">
+                <div className="flex items-center gap-5 mb-6">
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl bg-slate-900">{e.icon}</div>
                   <div>
-                    <h3 className="font-display text-xl font-semibold flex items-center gap-2">
-                      {exp.role}
-                      <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-primary" />
-                    </h3>
-                    <p className="text-primary">{exp.company}</p>
+                    <h3 className="text-xl font-black text-white">{e.title}</h3>
+                    <p className="text-violet-400 font-bold text-sm tracking-tight">{e.comp}</p>
                   </div>
-                  <span className="text-sm text-muted-foreground bg-secondary px-3 py-1 rounded-full">
-                    {exp.period}
-                  </span>
+                  <span className="ml-auto text-[10px] font-black text-slate-500 tracking-widest uppercase">{e.time}</span>
                 </div>
-                <p className="text-muted-foreground">{exp.description}</p>
-              </a>
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">{e.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {e.tags.map(t => <span key={t} className="px-3 py-1 rounded-lg bg-white/5 border border-white/5 text-[10px] font-black text-slate-300 uppercase tracking-wider">{t}</span>)}
+                </div>
+                <a href={e.cert} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-bold text-violet-400 hover:text-white transition-colors">📄 View Certificate →</a>
+              </div>
             </div>
           ))}
         </div>

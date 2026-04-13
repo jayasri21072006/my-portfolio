@@ -1,107 +1,41 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import SectionHeader from "./SectionHeader";
+import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="section-container">
-      <div className="text-center mb-16">
-        <p className="section-label">
-          Get In Touch
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Let's <span className="text-gradient">Connect</span>
-        </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          I'm always open to discussing new opportunities, collaborations, or just having a chat about AI and technology.
-        </p>
-      </div>
-      
-      <div className="max-w-3xl mx-auto">
-        <div className="card-glass rounded-2xl p-8 md:p-12">
-          <div className="grid md:grid-cols-2 gap-8">
+    <section id="contact" className="py-32 px-4 text-center relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet-600/10 rounded-full blur-[120px] -z-10" />
+      <div className="max-w-4xl mx-auto relative z-10">
+        <SectionHeader title="Connect" sub="Let's Work Together" />
+        
+        <div className="grid md:grid-cols-2 gap-8 text-left">
+          <div className="card-glass rounded-[2rem] p-8 md:p-12">
+            <h3 className="text-3xl font-black text-white mb-8 tracking-tighter">Get in Touch.</h3>
             <div className="space-y-6">
-              <h3 className="font-display text-xl font-semibold mb-4 text-white">Contact Information</h3>
-              
-              <a 
-                href="mailto:jayasri21072006@gmail.com"
-                className="flex items-center gap-4 hover:text-primary transition-colors duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center group-hover:glow-primary transition-all duration-300">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
+              <a href="mailto:jayasri21072006@gmail.com" className="flex items-center gap-4 group">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center text-xl group-hover:bg-violet-600 transition-colors">📧</div>
                 <div>
-                  <p className="text-sm text-primary/80 font-medium">Email</p>
-                  <p className="text-white font-medium">jayasri21072006@gmail.com</p>
+                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Email</p>
+                  <p className="text-white font-bold">jayasri21072006@gmail.com</p>
                 </div>
               </a>
-              
-              <a 
-                href="tel:+919342531156"
-                className="flex items-center gap-4 hover:text-primary transition-colors duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center group-hover:glow-primary transition-all duration-300">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-primary/80 font-medium">Phone</p>
-                  <p className="text-white font-medium">+91 93425 31156</p>
-                </div>
-              </a>
-              
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
+                <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center text-xl">📍</div>
                 <div>
-                  <p className="text-sm text-primary/80 font-medium">Location</p>
-                  <p className="text-white font-medium">Chengalpet, Tamil Nadu, India</p>
+                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Location</p>
+                  <p className="text-white font-bold">Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
-            
-            <div className="space-y-6">
-              <h3 className="font-display text-xl font-semibold mb-4 text-white">Social Links</h3>
-              
-              <div className="flex flex-col gap-4">
-                <Button 
-                  variant="outline" 
-                  className="justify-start h-14 px-6"
-                  asChild
-                >
-                  <a 
-                    href="https://www.linkedin.com/in/jayasri-t-sri" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Linkedin className="mr-3 h-5 w-5 text-primary" />
-                    LinkedIn Profile
-                  </a>
-                </Button>
-                
-                <Button 
-                  variant="outline" 
-                  className="justify-start h-14 px-6"
-                  asChild
-                >
-                  <a 
-                    href="https://github.com/jayasri21072006" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="mr-3 h-5 w-5 text-primary" />
-                    GitHub Profile
-                  </a>
-                </Button>
-                
-                <Button 
-                  className="justify-start h-14 px-6 glow-primary"
-                  asChild
-                >
-                  <a href="mailto:jayasri21072006@gmail.com" className="flex items-center">
-                    <Mail className="mr-3 h-5 w-5 text-primary" />
-                    <span className="font-medium">jayasri21072006@gmail.com</span>
-                  </a>
-                </Button>
+          </div>
+
+          <div className="card-glass rounded-[2rem] p-8 md:p-12 flex flex-col justify-center">
+            <p className="text-slate-400 text-lg mb-8">I am always looking for collaborative opportunities in AI/ML and Data Science.</p>
+            <div className="flex flex-col gap-4">
+              <a href="mailto:jayasri21072006@gmail.com" className="w-full py-4 bg-white text-slate-950 rounded-2xl font-black text-center hover:scale-[1.02] transition-transform">Email Me</a>
+              <div className="flex gap-4">
+                <a href="https://github.com/jayasri21072006" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 border border-white/10 text-white rounded-2xl font-black text-center hover:bg-white/5 transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/jayasri-t-sri" target="_blank" rel="noopener noreferrer" className="flex-1 py-4 border border-white/10 text-white rounded-2xl font-black text-center hover:bg-white/5 transition-colors">LinkedIn</a>
               </div>
             </div>
           </div>
