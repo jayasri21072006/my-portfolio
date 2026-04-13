@@ -27,6 +27,24 @@ const experiences = [
     tags: ["Python", "ETL", "Automation"],
     cert: "https://github.com/jayasri21072006/pro/blob/main/cognifyz%20python%20Intern.pdf",
     icon: "🐍"
+  },
+  {
+    title: "Tata Virtual Internship",
+    comp: "Tata iQ · Virtual via Forage",
+    time: "Completed",
+    desc: "Gen AI job simulation covering real-world AI applications, prompt design, and intelligent workflow automation.",
+    tags: ["Generative AI", "Prompt Engineering", "AI Workflows"],
+    cert: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_jk9FrdQPddzYXuNSH_1753200293130_completion_certificate.pdf",
+    icon: "🤖"
+  },
+  {
+    title: "DS with Gen AI",
+    comp: "PW Skills & IBM",
+    time: "Completed",
+    desc: "Comprehensive training combined with hands-on generative AI techniques and data science principles.",
+    tags: ["Data Science", "Generative AI", "IBM"],
+    cert: "https://github.com/jayasri21072006/pro/blob/main/pw%20skills%20DS%20with%20GenAI.pdf",
+    icon: "🔬"
   }
 ];
 
