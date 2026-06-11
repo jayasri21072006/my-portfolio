@@ -35,6 +35,14 @@ const projects = [
     techStack: ["Python", "PyTorch", "Flask", "OpenCV", "HTML/CSS"],
     github: "https://github.com/jayasri21072006/lungs-xray-pneumonia-predictor",
     icon: "🫁"
+  },
+  {
+    title: "AgentFlow OS",
+    sub: "AI Agent Command Center",
+    description: "A GitHub-ready AI dashboard that routes agent requests through an n8n workflow export, combining React, Vite, and AI orchestration into a clean command-center experience.",
+    techStack: ["React", "Vite", "JavaScript", "n8n", "Gemini API"],
+    github: "https://github.com/jayasri21072006/agentflow-os",
+    icon: "⚡"
   }
 ];
 
