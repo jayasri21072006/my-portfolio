@@ -28,10 +28,10 @@ const HeroSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-3xl mx-auto animate-fade-in-delayed">
           {[
-            { label: "CGPA", value: "9.35", icon: "💎", color: "from-blue-400 to-cyan-400" },
-            { label: "DSA SOLVED", value: "200+", icon: "🔥", color: "from-orange-400 to-red-400" },
+            { label: "CGPA", value: "9.42", icon: "💎", color: "from-blue-400 to-cyan-400" },
+            { label: "DSA SOLVED", value: "250+", icon: "🔥", color: "from-orange-400 to-red-400" },
             { label: "INTERNSHIPS", value: "4", icon: "🏢", color: "from-violet-400 to-fuchsia-400" },
-            { label: "PROJECTS", value: "3", icon: "🚀", color: "from-emerald-400 to-teal-400" },
+            { label: "PROJECTS", value: "4", icon: "🚀", color: "from-emerald-400 to-teal-400" },
           ].map(({ label, value, icon, color }) => (
             <div key={label} className="card-glass rounded-[2.5rem] p-6 text-center group hover:-translate-y-2 transition-transform duration-300">
               <div className="text-3xl mb-3 filter grayscale group-hover:grayscale-0 transition-all">{icon}</div>
