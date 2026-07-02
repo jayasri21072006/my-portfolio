@@ -64,8 +64,8 @@ const EducationSection = () => {
                 </div>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <div className="bg-slate-900 rounded-3xl px-8 py-5 border border-white/10 shadow-xl shadow-violet-500/5">
-                    <p className="text-4xl font-black text-white">9.35</p>
-                    <p className="text-xs text-white mt-1 font-black uppercase tracking-widest text-[11px]">CGPA · Up to 5th Sem</p>
+                    <p className="text-4xl font-black text-white">9.42</p>
+                    <p className="text-xs text-white mt-1 font-black uppercase tracking-widest text-[11px]">CGPA · Up to 6th Sem</p>
                   </div>
                   <div className="bg-slate-900 rounded-3xl px-8 py-5 border border-white/10 shadow-xl shadow-violet-500/5">
                     <p className="text-4xl font-black text-white">2023–27</p>
