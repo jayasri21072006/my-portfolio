@@ -17,7 +17,7 @@ const HeroSection = () => {
           Aspiring AI & ML Engineer with a strong foundation in deep learning, natural language processing, and computer vision. 
           Proven track record of building end-to-end intelligent systems, from real-time monitoring solutions to 
           predictive analytics platforms. Maintaining academic excellence with a CGPA of{" "}
-          <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-amber-300 to-orange-400 border-b-2 border-amber-400/60">9.35</span> (up to 5th Semester).
+          <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-amber-300 to-orange-400 border-b-2 border-amber-400/60">9.42</span> (up to 6 semesters).
         </p>
 
         <div className="flex gap-4 flex-wrap justify-center mb-16 animate-fade-in-delayed">
