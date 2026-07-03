@@ -13,7 +13,7 @@ const achievements = [
     sub: "Gold Badge | 2277.5 Points", 
     detail: "Highest proficiency level with a 6-Star Badge and Gold Level in Python, achieving a top score of 2277.5 through advanced problem solving." 
   },
-  { icon: "💻", title: "LeetCode 200+", sub: "Data Structures & Algos", detail: "Solved 200+ DSA problems covering Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more." },
+  { icon: "💻", title: "LeetCode 250+", sub: "Data Structures & Algos", detail: "Solved 250+ DSA problems covering Arrays, Linked Lists, Trees, Graphs, Dynamic Programming, and more." },
   { icon: "🏆", title: "SIH 2025 Selected", sub: "College Level Round", detail: "Sentiment Analysis project selected at the Internal SIH 2025 college round, competing with teams across departments." }
 ];
 
