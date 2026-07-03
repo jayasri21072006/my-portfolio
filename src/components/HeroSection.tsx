@@ -13,10 +13,8 @@ const HeroSection = () => {
         <p className="text-3xl sm:text-4xl font-black mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-violet-400 to-fuchsia-400 animate-slide-up">
           AI & ML Engineer
         </p>
-        <p className="max-w-2xl text-white text-lg leading-relaxed mb-10 animate-fade-in-delayed mx-auto font-bold">
-          Aspiring AI & ML Engineer with a strong foundation in deep learning, natural language processing, and computer vision. 
-          Proven track record of building end-to-end intelligent systems, from real-time monitoring solutions to 
-          predictive analytics platforms. Maintaining academic excellence with a CGPA of{" "}
+        <p className="max-w-3xl text-white text-lg leading-relaxed mb-10 animate-fade-in-delayed mx-auto font-bold">
+          Aspiring AI & ML Engineer with expertise in Deep Learning, NLP, and Computer Vision. Architecting intelligent end-to-end systems including real-time proctoring solutions (YOLOv8 & MediaPipe), NLP applications selected for Smart India Hackathon 2025, and diagnostic AI tools for medical imaging. Proficient in PyTorch, TensorFlow, Scikit-learn, and full-stack ML deployment. Holding certifications in MongoDB Developer, Google Data Analytics, Machine Learning, Data Science & Gen AI, SQL, and Python. Solving complex algorithmic challenges (250+ LeetCode problems). Maintaining academic excellence with a CGPA of{" "}
           <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-amber-300 to-orange-400 border-b-2 border-amber-400/60">9.42</span> (up to 6 semesters).
         </p>
 
