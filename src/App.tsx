@@ -11,7 +11,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter basename="/aspiring-ai-engineer-portfolio">
+      <BrowserRouter basename="/my-portfolio">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* Catch-all route to redirect to index, important for GitHub Pages */}

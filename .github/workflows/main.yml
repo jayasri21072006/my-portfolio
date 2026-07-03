@@ -2,12 +2,16 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: "main"
+    branches: ["main"]
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build_site:
@@ -23,7 +27,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -31,7 +35,6 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # This is the important part: Vite builds to the 'dist' folder
           path: 'dist/'
 
   deploy:
